@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body
+{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: radial-gradient(gold, blue, orange, white, silver);
+}
+
+.h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    flood-color: rgba(82, 197, 140, 0.801);
+}
+.center{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.outer{
+    position: relative;
+    margin: 0 50px;
+    background: black;
+   
+}
+.circle1{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.circle2{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  
+    
+}
+.outer button, .outer span{
+    position: relative;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+.outer circle1{
+    background: black;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    z-index: 9;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.outer circle2{
+    background: black;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    z-index: 9;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.outer circle{
+    background: black;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    z-index: 9;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.circle1 button{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background: url(blackthor.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.circle2 button{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background: url(MUSIC.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.circle button{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background: url(blackironman.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.outer span{
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+.circle1 span{
+    border-radius: 50%;
+}
+.circle2 span{
+    border-radius: 50%;
+}
+.circle span{
+    border-radius: 50%;
+}
+.outer:hover span:nth-child(1){
+    filter: blur(7px);
+}
+.outer:hover span:nth-child(2){
+    filter: blur(14px);
+}
+.outer:hover{
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0, red, darkblue);
+    animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+@media (max-width: 640px) {
+    .center{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .outer{
+        margin: 50px 0px;
+        
+    }
+}
